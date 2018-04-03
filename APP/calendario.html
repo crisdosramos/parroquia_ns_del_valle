@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Cristian Dos Ramos & Daniel Rivetti">
+
+    <title>Iglesia Ntra. Sra. Virgen del Valle</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+      <link href="css/propio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+      <link rel="stylesheet" href="plugins/fullcalendar/fullcalendar.min.css">
+    <link rel="stylesheet" href="plugins/fullcalendar/fullcalendar.print.css" media="print">
+     <link rel="stylesheet" href="plugins/datepicker/datepicker3.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker-bs3.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+ 
+<body style="background-color: #D8D8D8;">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Navegación</span>
+                    <span class="icon-bar" ></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>                
+               	 <a class="navbar-brand navbar-brand-logo"  href="index.html">
+               	 	<i class="fa fa-university text-red letra" aria-hidden="true"></i> <span style="letra">Iglesia Nuestra Señora del Valle</span>
+               	 </a>
+               	 <!--<a class="navbar-brand navbar-brand-logo" href="index.html"></a>-->
+            </div>
+
+            
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="noticias.html">Noticias</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Servicios Religiosos <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                           <li>
+                                <a href="Bautizo.html">Bautizo</a>
+                            </li>
+                            <li>
+                                <a href="confesion.html">Confesión</a>
+                            </li>
+                            <li>
+                                <a href="comunion.html">Comunión</a>
+                            </li>
+                            <li>
+                                <a href="confirmacion.html">Confirmación</a>
+                            </li>
+                            <li>
+                                <a href="matrimonio.html">Matrimonio</a>
+                            </li>
+                              <li>
+                                <a href="adulto.html">Catequesis de adulto</a>
+                            </li>
+                        </ul>
+                    </li>
+                       <li>
+                        <a href="calendario.html">Calendario</a>
+                    </li>
+                    <li>
+                        <a href="galeria.html">Galería</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contacto</a>
+                    </li>
+                    <form class="navbar-form navbar-left" role="search">
+				        <div class="form-group">
+				          <input type="text" class="form-control" placeholder="Escriba aquí...">
+				        </div>
+				        <button type="submit" class="btn btn-default">Buscar</button>
+				      </form>
+                </ul>
+
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    
+    </nav>
+
+    <!-- Header Carousel -->
+
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Marketing Icons Section -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="letra">
+                    Iglesia Nuestra Señora del Valle
+                    <hr class="rojo">
+                </h1>
+            </div>
+             <div class="row">
+            <div class="col-lg-12">
+                <ol class="breadcrumb">
+                    <li><a style="color: #000000;"href="index.html">Pagina Principal</a>
+                    </li>
+                    <li class="active">Calendario</li>
+                   
+         
+                </ol>
+            </div>
+        </div>
+           
+        </div>
+     <hr class="verde">
+
+        <div class="row blancofondo">
+           
+            <div class="col-md-12">
+              <div class="box box-primary">
+                <div class="box-body no-padding">
+                  <!-- THE CALENDAR -->
+                  <div id="calendar"></div>
+                </div><!-- /.box-body -->
+              </div><!-- /. box -->
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+          <hr class="amarillo">
+
+        <footer class="blancofondo">
+            <div class="row " >
+                <div class="col-lg-12">
+                    <h5>Copyright &copy; Cristian Dos Ramos & Daniel Rivetti.</h5>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
+    <script src="plugins/fullcalendar/fullcalendar.min.js"></script>
+    <script>
+      $(function () {
+
+        /* initialize the external events
+         -----------------------------------------------------------------*/
+        function ini_events(ele) {
+          ele.each(function () {
+
+            // create an Event Object (http://arshaw.com/fullcalendar/docs/event_data/Event_Object/)
+            // it doesn't need to have a start or end
+            var eventObject = {
+              title: $.trim($(this).text()) // use the element's text as the event title
+            };
+
+            // store the Event Object in the DOM element so we can get to it later
+            $(this).data('eventObject', eventObject);
+
+            // make the event draggable using jQuery UI
+            $(this).draggable({
+              zIndex: 1070,
+              revert: true, // will cause the event to go back to its
+              revertDuration: 0  //  original position after the drag
+            });
+
+          });
+        }
+        ini_events($('#external-events div.external-event'));
+
+        /* initialize the calendar
+         -----------------------------------------------------------------*/
+        //Date for the calendar events (dummy data)
+        var date = new Date();
+        var d = date.getDate(),
+                m = date.getMonth(),
+                y = date.getFullYear();
+        $('#calendar').fullCalendar({
+          header: {
+            left: 'prev,next,today',
+            center: 'title',
+            right: 'month,agendaWeek,agendaDay'
+          },
+          buttonText: {
+            today: 'today',
+            month: 'month',
+            week: 'week',
+            day: 'day'
+          },
+          //Random default events
+          events: [
+           
+            
+           
+            {
+              title: 'Prueba',
+              start: new Date(y, m, d, 12, 0),
+              end: new Date(y, m, d, 14, 0),
+              allDay: false,
+              backgroundColor: "#00c0ef", //Info (aqua)
+              borderColor: "#00c0ef" //Info (aqua)
+            },
+            {
+              title: 'Confirmación',
+              start: new Date(y, m, d + 1, 19, 0),
+              end: new Date(y, m, d + 1, 22, 30),
+              allDay: false,
+              backgroundColor: "#00a65a", //Success (green)
+              borderColor: "#00a65a" //Success (green)
+            },
+            {
+              title: 'Matrimonio',
+              start: new Date(y, m, 28),
+              end: new Date(y, m, 29),
+              url: 'http://google.com/',
+              backgroundColor: "#3c8dbc", //Primary (light-blue)
+              borderColor: "#3c8dbc" //Primary (light-blue)
+            }
+          ],
+          editable: false,
+          droppable: false , // this allows things to be dropped onto the calendar !!!
+          drop: function (date, allDay) { // this function is called when something is dropped
+
+            // retrieve the dropped element's stored Event Object
+            var originalEventObject = $(this).data('eventObject');
+
+            // we need to copy it, so that multiple events don't have a reference to the same object
+            var copiedEventObject = $.extend({}, originalEventObject);
+
+            // assign it the date that was reported
+            copiedEventObject.start = date;
+            copiedEventObject.allDay = allDay;
+            copiedEventObject.backgroundColor = $(this).css("background-color");
+            copiedEventObject.borderColor = $(this).css("border-color");
+
+            // render the event on the calendar
+            // the last `true` argument determines if the event "sticks" (http://arshaw.com/fullcalendar/docs/event_rendering/renderEvent/)
+            $('#calendar').fullCalendar('renderEvent', copiedEventObject, true);
+
+            // is the "remove after drop" checkbox checked?
+            if ($('#drop-remove').is(':checked')) {
+              // if so, remove the element from the "Draggable Events" list
+              $(this).remove();
+            }
+
+          }
+        });
+
+        /* ADDING EVENTS */
+        var currColor = "#3c8dbc"; //Red by default
+        //Color chooser button
+        var colorChooser = $("#color-chooser-btn");
+        $("#color-chooser > li > a").click(function (e) {
+          e.preventDefault();
+          //Save color
+          currColor = $(this).css("color");
+          //Add color effect to button
+          $('#add-new-event').css({"background-color": currColor, "border-color": currColor});
+        });
+        $("#add-new-event").click(function (e) {
+          e.preventDefault();
+          //Get value and make sure it is not null
+          var val = $("#new-event").val();
+          if (val.length == 0) {
+            return;
+          }
+
+          //Create events
+          var event = $("<div />");
+          event.css({"background-color": currColor, "border-color": currColor, "color": "#fff"}).addClass("external-event");
+          event.html(val);
+          $('#external-events').prepend(event);
+
+          //Add draggable funtionality
+          ini_events(event);
+
+          //Remove event from text input
+          $("#new-event").val("");
+        });
+      });
+    </script>
+
+</body>
+
+</html>

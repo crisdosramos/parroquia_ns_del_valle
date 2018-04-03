@@ -1,0 +1,84 @@
+cuadro{
+background: rgba(73,155,234,1);
+background: -moz-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(73,155,234,0.86) 49%, rgba(44,133,230,0.75) 85%, rgba(32,124,229,0.75) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(73,155,234,1)), color-stop(49%, rgba(73,155,234,0.86)), color-stop(85%, rgba(44,133,230,0.75)), color-stop(100%, rgba(32,124,229,0.75)));
+background: -webkit-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(73,155,234,0.86) 49%, rgba(44,133,230,0.75) 85%, rgba(32,124,229,0.75) 100%);
+background: -o-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(73,155,234,0.86) 49%, rgba(44,133,230,0.75) 85%, rgba(32,124,229,0.75) 100%);
+background: -ms-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(73,155,234,0.86) 49%, rgba(44,133,230,0.75) 85%, rgba(32,124,229,0.75) 100%);
+background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(73,155,234,0.86) 49%, rgba(44,133,230,0.75) 85%, rgba(32,124,229,0.75) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5', GradientType=1 );
+}
+
+
+.letra{
+font-family: Century Gothic, sans-serif;
+}
+
+.amarillo {
+border-top: 1px solid #FFBF00;
+}
+
+.verde{
+border-top: 1px solid #088A08;
+}
+
+.rojo{
+border-top: 1px solid #F93838;
+}
+
+
+.blancofondo{
+background-color: #FFFFFF;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+	    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+}
+
+/* The Close Button */
+.close {
+  
+    color: #000000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top: -300px; opacity: 0} 
+    to {top: 0; opacity: 1}
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
